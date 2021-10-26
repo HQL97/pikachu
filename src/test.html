@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">  
+    <title>测试</title>
+</head>
+<body>
+    <div id="demoText"></div>
+    <style id="demoHTML"></style>
+    <div id="button"><button id="pause">暂停</button>
+        <button id="start">播放</button>
+        <button id="quick">快速</button>
+        <button id="medium">中速</button>
+        <button id="slow">慢速</button></div>
+    <div id="html">
+        <div class="skin">
+        <div class="eye left"></div>
+        <div class="eye right"></div>
+        <div class="nose"><div class="semi"></div><div class="tri"></div></div>
+        <div class="face left"></div>
+        <div class="face right"></div>
+        <div class="mouth">
+            <div class="up"><div class="lip left"></div><div class="lip right"></div>    
+        </div>
+            <div class="down"><div class="circle1"><div class="circle2"></div></div></div>
+        </div>
+    </div></div>
+    <style>
+        *{box-sizing: border-box;}
+       *::before,*::after {box-sizing: border-box;}
+        #demoHTML{
+            display:none;
+        }
+        #demoText{
+            position:fixed;
+            height:200px;
+            top:0;
+            left:0;
+            width:100%;
+            overflow-y:auto;
+        }
+        #demoText::-webkit-scrollbar{
+            display:none;
+        }
+        #html{
+            position:fixed;
+            top:200px;
+            left:0;
+            width:100%;
+            height:100%;
+        }
+        
+        #button{
+            display:flex;
+            position:fixed;
+            flex-direction: column;
+            top:0;
+            right:0;
+            margin-right:10px;
+            margin-top:10px;
+        }
+        #button>button{
+            margin:5px;
+            padding:3px 3px;
+        }
+    </style>
+    <script src="test.js"></script>
+</body>
+</html>
